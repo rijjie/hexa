@@ -1,0 +1,177 @@
+html {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.4;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background-color: #FBFBFB;
+}
+
+.container {
+    padding: 0;
+    padding-top: 0.25rem;
+    text-align: center;
+    font-size: 0;
+}
+
+.input, .output {
+    min-width: 12rem;
+}
+
+.input {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.conteneur_nb_des {
+    font-size: 0;
+}
+
+.conteneur_nb_des span {
+    display: inline-block;
+    width: 4rem;
+    width: 33.3333333%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    vertical-align: middle;
+}
+
+.hexa_nb_des {
+    font-size: 3rem;
+}
+
+.operateur {
+    display: inline-block;
+    font-family: Times,serif;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.hexa_lancer {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: solid #333333;
+    border-width: 1px;
+    border-width: 0.0625rem;
+    border-radius: 2px;
+    border-radius: 0.125rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hexa_lancer:active {
+    border-color: grey;
+    color: grey;
+}
+
+.output {
+    visibility: hidden;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hexa_detail_lancer {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.detail_lancer_texte {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+    color: grey;
+}
+
+.hexa_succes {
+    width: 4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.hexa_nb_succes_conteneur {
+    display: inline-block;
+    position: relative;
+    height: 3.2rem;
+}
+
+.hexa_nb_succes_conteneur:before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 1.8rem solid transparent;
+    border-bottom: 1rem solid #703837;
+    border-left: 1.8rem solid transparent;
+}
+
+.hexa_nb_succes_conteneur:after {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid #703837;
+    border-right: 1.8rem solid transparent;
+    border-left: 1.8rem solid transparent;
+}
+
+.hexa_nb_succes {
+    display: inline-block;
+    width: 3.6rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 2rem;
+    color: white;
+    background-color: #703837;
+}
+
+
+
+@media screen and (orientation:landscape) {
+    .input,
+    .output {
+        min-width: 15rem;
+        vertical-align: top;
+    }
+
+    .input {
+        display: inline-block;
+    }
+
+    .output {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width:720px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:960px) {
+    html {
+        font-size: 32px;
+    }
+}

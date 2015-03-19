@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if IE]> <html class="ie" manifest="manifest.appcache"> <![endif]-->
+<!--[if !IE]><!--> <html manifest="manifest.appcache"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title>Hexagon Universe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='./favicon.ico' rel='icon' type='image/x-icon'/>
+	<link rel="stylesheet" type="text/css" href="./hexa.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="site_content">
+
+			<div class="input">
+				Nombre de dés
+				<div class="conteneur_nb_des">
+					<span class="operateur" id="hexa_moins">&ndash;</span>
+					<span class="hexa_nb_des" id="hexa_nb_des"></span>
+					<span class="operateur" id="hexa_plus">+</span>
+				</div>
+				<span class="hexa_lancer" id="hexa_lancer">lancer</span>
+			</div>
+			<div class="output" id="output">
+				Nombre de succès
+				<div class="hexa_succes" id="hexa_succes">
+					 <div class="hexa_nb_succes_conteneur"><span class="hexa_nb_succes" id="hexa_nb_succes"></span></div>
+				</div>
+
+				<div>
+					<div class="hexa_detail_lancer" id="hexa_detail_lancer"></div>
+				</div>
+
+			</div><!-- / .output -->
+
+		</div><!-- / .site_content -->
+	</div><!-- / .container -->
+
+	<script type="text/javascript" src="./Nonsense.js"></script>
+	<script type="text/javascript" src="./hexa.js"></script>
+</body>
+</html>
