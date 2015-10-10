@@ -4,16 +4,18 @@ var App = {
 
 	init: function init() {
 
-		var hexa_nb_succes, hexa_detail_lancer,
-		ns = new Nonsense(),
-		nb_des = 8, // valeur par défaut, moyenne d'une main
-		el_output = document.getElementById('output'),
-		el_hexa_detail_lancer = document.getElementById('hexa_detail_lancer'),
-		el_hexa_lancer = document.getElementById('hexa_lancer'),
-		el_hexa_nb_succes = document.getElementById('hexa_nb_succes'),
-		el_hexa_nb_des = document.getElementById('hexa_nb_des'),
-		el_hexa_moins = document.getElementById('hexa_moins'),
-		el_hexa_plus = document.getElementById('hexa_plus');
+		var DEFAULT_DICES_NUMBER = 8; // valeur par défaut, moyenne d'une main
+		var hexa_nb_succes;
+		var hexa_detail_lancer;
+		var ns = new Nonsense();
+		var nb_des = DEFAULT_DICES_NUMBER;
+		var el_output = document.getElementById('output');
+		var el_hexa_detail_lancer = document.getElementById('hexa_detail_lancer');
+		var el_hexa_lancer = document.getElementById('hexa_lancer');
+		var el_hexa_nb_succes = document.getElementById('hexa_nb_succes');
+		var el_hexa_nb_des = document.getElementById('hexa_nb_des');
+		var el_hexa_moins = document.getElementById('hexa_moins');
+		var el_hexa_plus = document.getElementById('hexa_plus');
 
 		function lancer_un_de(nb_relance) {
 
