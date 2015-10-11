@@ -1,0 +1,20 @@
+{
+  "name": "Hexagon Universe - Lancé de dés",
+  "version": "3.0.0",
+  "homepage": "https://github.com/rijjie/hexa",
+  "authors": [
+    "royneau <royneau@freshtouch.fr>"
+  ],
+  "license": "GNU GPL",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "add-to-homescreen": "~3.2.2"
+  }
+}

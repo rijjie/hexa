@@ -126,6 +126,11 @@ var App = {
 		      }
 		  });
 		}
+
+		addToHomescreen({
+			skipFirstVisit: true,
+			maxDisplayCount: 2
+		});
 	}
 };
 
